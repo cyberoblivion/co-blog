@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Let's get started"
+title:  "Let get started!"
 date:   2024-04-23 23:34:44 -0400
 categories: jekyll update
 ---
@@ -21,6 +21,13 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+
+... which is shown in the screenshot below:
+![My helpful screenshot](/assets/co-icon.svg)
+<img src="/assets/co-icon.svg" height="250px"/>
+<br/>
+<img src="/assets/logo_final.svg" height="250px"/>
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
