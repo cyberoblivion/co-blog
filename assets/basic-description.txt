@@ -1,0 +1,33 @@
+starting a blog called cyberoblivion where I am going to post about software developement, systems engineering and networking. With an eye towards business applications. can you Write an awesome description for my new site here. It will appear in my document head meta (for Google search results) and in my rss feed site description.  Please make the tone hacker style without to much fluff. here is my list of blog ideas so far. 
+Git
+AWX
+Zabbix
+Graylog
+Zerotier
+Blog Setup
+Github (General) 
+Github - web developer tool
+Gitlab
+Ceph
+Greenbone
+Artifactory
+Jenkins
+AI for Blog
+LLama AI
+chatGPT dev and API
+Openstack
+IDE's (Netbeans, Idea, Eclipse)
+Dashlane
+pfsense
+HAPROXY
+slack
+Podman/Docker
+Kubernetes
+Bareos
+rsync.net
+Konfluence
+Jira Bitbucket
+Atlasian SDLC
+KVM tips - tricks
+lxc v lxd
+keepass
