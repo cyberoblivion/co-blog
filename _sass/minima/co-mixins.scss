@@ -1,0 +1,41 @@
+$custom-gradient: linear-gradient(to bottom, #05233f, #61849c);
+/**
+ * Headings
+ */
+ h1, h2, h3, h4, h5, h6 {
+    background: $custom-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.grean-gradient-text {
+    background: linear-gradient(to bottom, #6ea41b, #b5dc17);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.grean-gradient-text {
+    background: linear-gradient(to bottom, #05233f, #61849c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/**
+over ride from base
+*/
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.site-nav .page-link {    
+    color: #72a81b;
+    // color: #76aa1b;
+    line-height: 1.5;
+}
