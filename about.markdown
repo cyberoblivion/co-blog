@@ -6,16 +6,19 @@ permalink: /about/
 <!-- # Welcome -->
 
 <div>
-    <p>Welcome to CyberOblivion, your premier destination for unlocking the complexities of modern technology through a lens of practicality and strategic insight. Delve into the intricacies of software engineering, systems architecture, and network optimization, tailored specifically for business applications.</p>
-    
-    <p>At CyberOblivion, we serve as your trusted guides through the labyrinth of industry-leading tools and methodologies. Explore the foundational pillars of version control with Git, streamline your workflow with AWX, and gain invaluable insights into system monitoring with Zabbix and Graylog.</p>
+<p>Venture into CyberOblivion: Where Code Meets Chaos and Tech Wizardry Awaits</p>
 
-    <p>Our mission is to empower professionals with the knowledge and skills necessary to navigate the ever-evolving landscape of technology. From mastering the art of project management with GitHub to leveraging the collaborative potential of GitLab, we equip you with the tools to drive innovation and efficiency within your organization.</p>
-    
-    <p>Join us as we demystify complex concepts such as containerization with Podman/Docker, orchestration with Kubernetes, and data management with Ceph. Elevate your software development lifecycle with robust solutions like Jenkins and Artifactory, while harnessing the power of AI to revolutionize your digital presence.</p>
-    
-    <p>At CyberOblivion, education meets empowerment, and innovation meets implementation. Step into a world where technology serves as a catalyst for business growth and success. Welcome to the forefront of digital transformation—welcome to CyberOblivion.</p>
+<p>Step into the shadows of cyberspace with us as we delve into the clandestine world of software sorcery, system scheming, and networking necromancy. At CyberOblivion, we're not just your average tech blog; we're the renegades of the digital frontier, hacking our way through Git jungles, Linux labyrinths, and Security dungeons, all while sipping on the finest virtual brews.</p>
+
+<p>Whether you're a business magnate seeking the secrets of cyber alchemy or a code cowboy looking for a thrill, our eclectic mix of topics has something for everyone. From Graylog ghost stories to Zabbix time-travel experiments, we're here to blur the lines between practicality and pure, unadulterated fun.</p>
+
+<p>Join us as we dissect the inner workings of GitHub, GitLab, and every other Git under the binary sun. Dive deep into the abyss of Ceph, scale the peaks of Openstack, and navigate the treacherous waters of Atlassian with the cunning of a digital ninja.</p>
+
+<p>But wait, there's more! Explore the AI wonders of LLama and ChatGPT, conquer the virtual kingdoms of Podman, Docker and Kubernetes, and unlock the secrets of the digital universe with pfsense, HAPROXY, and beyond.</p>
+
+<p>So strap in, fellow netrunners, as we embark on this wild ride through the cyber wasteland. Whether you're a seasoned sysadmin, a curious coder, or just a digital daredevil looking for a thrill, CyberOblivion is your ultimate destination for all things tech... and maybe a few things that are utterly useless but undeniably cool. Welcome to the edge of oblivion — let the adventure begin!</p>
 </div>
+
 <div style="text-align:center;">
     <img src="/assets/co-icon.svg" height="100px" alt="CyberOblivion Logo"/>    
 </div>
