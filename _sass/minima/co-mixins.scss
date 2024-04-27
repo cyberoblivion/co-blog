@@ -39,3 +39,13 @@ over ride from base
     // color: #76aa1b;
     line-height: 1.5;
 }
+
+.footer-col-1 {
+    width: -webkit-calc(35% -(30px / 2));
+    width: calc(30% - 30px / 2);
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% -(30px / 2));
+    width: calc(25% - 30px / 2);
+}
