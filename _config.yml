@@ -21,14 +21,16 @@ port: 4001
 title: CyberOblivion
 email: info@cyberoblivion.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Explore CyberOblivion: Where Tech Renegades Unravel Secrets, from Git to Kubernetes. 
-  Dive into a realm of software sorcery, system scheming, and networking necromancy. 
-  Join us on this wild ride through the cyber wasteland, where adventure awaits at every byte!
+  Welcome to CyberOblivion, Here, technology enthusiasts explore topics like software development, system architecture, and beyond. 
+  Through in-depth insights and practical solutions, we navigate the digital landscape, empowering developers and architects to stay ahead of industry trends. 
+  Join us as we uncover the technologies shaping the future, guided by hands-on expertise and a passion for innovation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  cyberoblivion
 youtube_username: "@CyberOblivion2"
+author: "Ben Erridge"
+start_year: 2024
 
 # Build settings
 theme: minima

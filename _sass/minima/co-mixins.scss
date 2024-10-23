@@ -3,10 +3,7 @@ $custom-gradient: linear-gradient(to bottom, #05233f, #61849c);
  * Headings
  */
  h1, h2, h3, h4, h5, h6 {
-    background: $custom-gradient;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color:rgb(23, 43, 77);
 }
 
 .grean-gradient-text {
@@ -41,11 +38,94 @@ over ride from base
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% -(30px / 2));
-    width: calc(30% - 30px / 2);
+    width: -webkit-calc(25% -(30px / 2));
+    width: calc(25% - 30px / 2);    
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% -(30px / 2));
-    width: calc(25% - 30px / 2);
+    width: -webkit-calc(25% -(30px / 2));
+    width: calc(25% - 30px / 2);    
+}
+
+.footer-col-3 {
+    width: 50%;    
+}
+.social-media-list svg {
+    width: 16px;
+    height: 16px;
+}
+.svg-icon {
+    padding-right: 0px;
+}
+
+
+//  this changes box content back to default. boot strap uses a different mode
+// *, *::before, *::after {
+//     box-sizing: inherit;
+// }
+
+
+pre, code {    
+    background-color: #f1f2f4;
+  }
+
+.info-panel {
+    display: flex;
+    align-items: flex-start;
+    background-color: #e9f2ff;
+    border-left: 5px solid #0077cc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 20px 0;    
+    overflow: auto;
+}
+
+.info-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #0077cc;
+}
+
+.info-content {
+    color: #333;
+}
+
+
+.citation {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.citation a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.citation a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px; /* Smaller font size */
+    color: #888; /* Light gray color */
+    opacity: 0.6; /* Less visible */
+}
+
+footer a {
+    color: #888; /* Light gray for the link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+footer p {
+    margin: 0;
 }
