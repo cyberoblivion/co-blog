@@ -69,7 +69,7 @@ sudo systemctl enable libvirtd;
 sudo virt-manager gui
       {% endhighlight %}
       Create new VM select File → New Virtual Machine.<br/>
-      <img src="/assets/win11kvm/new-vm-step-0.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-step-0.png" width="300px"/>
     </li>
     <li>
       Select installation source. I will use a downloaded ISO image. 
@@ -83,29 +83,29 @@ sudo virt-manager gui
          </a>
           </div>
       </div>  
-      <img src="/assets/win11kvm/new-vm-step-1.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-step-1.png" width="300px"/>
     </li>
     <li>
       Choose install media and choose operating system. Choose the ISO file for Windows 11 as your install media, then uncheck "Automatically detect"  and set the OS variant as 'Windows 11' in the dropdown.
       <br/>
-      <img src="/assets/win11kvm/new-vm-step-2.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-step-2.png" width="300px"/>
     </li>
        <li>
       Choose the Memory and CPU parameters of your preference. For a smooth Windows 11 experience, allocate at least 8 GB of RAM and 
 4 CPU cores. Adjust based on your system’s resources.
       <br/>
-      <img src="/assets/win11kvm/new-vm-step-3.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-step-3.png" width="300px"/>
     </li>    
     <li>
       Choose storage configuration
       <br/>
-      <img src="/assets/win11kvm/new-vm-step-4.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-step-4.png" width="300px"/>
     </li>
     <li>
       <strong>Important:</strong> Before proceeding, ensure you check the 'Customize configuration before install' box. This allows you to adjust the chipset, 
 firmware, and add a vTPM, which are required for Windows 11
       <br/>
-      <img src="/assets/win11kvm/new-vm-step-5.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-step-5.png" width="300px"/>
     </li>
     <li>
       <strong>Important:</strong> In the 'Overview' section, set the firmware to  OVMF_CODE.secboot.fd  for UEFI and Secure Boot support. Under 'Chipset,' 
@@ -115,7 +115,7 @@ firmware, and add a vTPM, which are required for Windows 11
       <br/>
       Firmware: <strong>OVMF_CODE.secboot.fd</strong>
       <br/>
-      <img src="/assets/win11kvm/new-vm-change-firmware.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-change-firmware.png" width="300px"/>
     </li>
     <li>
       <strong>Important:</strong> Important: Ensure vTPM is configured for Windows 11 compatibility.
@@ -125,7 +125,7 @@ firmware, and add a vTPM, which are required for Windows 11
       <br/>
       version: <strong>2.0</strong>
       <br/>
-      <img src="/assets/win11kvm/new-vm-customize-tpm.png" width="250px"/>
+      <img src="/assets/win11kvm/new-vm-customize-tpm.png" width="300px"/>
     </li>
     <li>
       Once the configuration is complete, select 'Begin Installation.' After installation, ensure you install any necessary drivers or tools such as 
