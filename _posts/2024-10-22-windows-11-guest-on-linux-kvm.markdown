@@ -150,7 +150,7 @@ sudo virt-install \
   --memory 8192 \
   --vcpus 4 \
   --cdrom /path/to/windows11.iso \
-  --disk size=50G,format=qcow2 \
+  --disk size=50,format=qcow2 \
   --os-variant win11 \
   --boot uefi,loader=/usr/share/edk2/ovmf/OVMF_CODE.secboot.fd,nvram_template=/usr/share/edk2/ovmf/OVMF_VARS.fd \
   --features smm=on \
