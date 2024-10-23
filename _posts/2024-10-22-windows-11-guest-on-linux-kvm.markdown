@@ -164,6 +164,10 @@ sudo virt-install \
 
 
 <br/>
+
+{% include comments.html %}
+
+
 <p align="center">
   <img src="/assets/logo_final.svg" height="250px"/>
 </p>
@@ -172,4 +176,3 @@ sudo virt-install \
         Source: <a href="https://getlabsdone.com/how-to-install-windows-11-on-kvm/" target="_blank">Windows 11 on KVM – How to Install Step by Step?</a> by Author Saifudheen Sidheeq, published on GetLabsDone.
     </p>
 </div>
-
