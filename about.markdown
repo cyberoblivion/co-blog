@@ -6,7 +6,7 @@ permalink: /about/
 <!-- # Welcome -->
 
 <div>
-    <p>Welcome to CyberOblivion—a blog dedicated to the exploration of cutting-edge technologies, software development, and system architecture. Here, we delve deep into the world of software engineering, system administration, and network security, providing insights and practical knowledge for professionals across industries.</p>
+    <p>Welcome to CyberOblivion—a blog dedicated to the exploration of cutting-edge technologies, software development, networking and system architecture. Here, we delve deep into the world of software engineering, system administration, and network security, providing insights and practical knowledge for professionals across industries.</p>
 
     <p>At CyberOblivion, we strive to be more than just another tech blog. We are a community of developers, engineers, and tech enthusiasts passionate about simplifying complex concepts and sharing real-world solutions. Whether it's unraveling the intricacies of Enterprise software, configuring Linux environments, or strengthening security frameworks, our content is designed to inform, educate, and inspire.</p>
 
