@@ -108,24 +108,24 @@ pre, code {
 }
 
 
-footer {
+.copywrite-panel {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 0;
     font-size: 12px; /* Smaller font size */
     color: #888; /* Light gray color */
     opacity: 0.6; /* Less visible */
 }
 
-footer a {
+.copywrite-panel a {
     color: #888; /* Light gray for the link */
     text-decoration: none;
 }
 
-footer a:hover {
+.copywrite-panel a:hover {
     text-decoration: underline; /* Underline link on hover */
 }
 
-footer p {
+.copywrite-panel p {
     margin: 0;
 }
