@@ -6,9 +6,9 @@ permalink: /about/
 <!-- # Welcome -->
 
 <div>
-    <p>Welcome to CyberOblivion—a blog dedicated to the exploration of cutting-edge technologies, software development, networking and system architecture. Here, we delve deep into the world of software engineering, system administration, and network security, providing insights and practical knowledge for professionals across industries.</p>
+    <p>Welcome to CyberOblivion—a blog dedicated to the exploration of cutting-edge technologies, software development, networking and system architecture. Here, we providing insights and practical knowledge for professionals across industries.</p>
 
-    <p>At CyberOblivion, we strive to be more than just another tech blog. We are a community of developers, engineers, and tech enthusiasts passionate about simplifying complex concepts and sharing real-world solutions. Whether it's unraveling the intricacies of Enterprise software, configuring Linux environments, or strengthening security frameworks, our content is designed to inform, educate, and inspire.</p>
+    <p>At CyberOblivion, we strive to be more than just another tech blog. We are a community of developers, engineers, architect and tech enthusiasts passionate about simplifying complex concepts and sharing real-world solutions. Whether it's unraveling the intricacies of Enterprise software, configuring Linux environments, or strengthening security frameworks, our content is designed to inform, educate, and inspire.</p>
 
     <h2>Who We Serve</h2>
     <p>Our topics cater to a diverse audience—from business leaders seeking strategic tech insights to developers and system architects eager to expand their skill sets. We cover a wide array of subjects, including logging with Graylog, monitoring with Zabbix, infrastructure management with OpenStack, and more.</p>
