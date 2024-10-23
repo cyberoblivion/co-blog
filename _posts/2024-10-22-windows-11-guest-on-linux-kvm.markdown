@@ -129,7 +129,7 @@ firmware, and add a vTPM, which are required for Windows 11
     </li>
     <li>
       Once the configuration is complete, select 'Begin Installation.' After installation, ensure you install any necessary drivers or tools such as 
-the virtio drivers for improved VM performance. The latest Windows VirtIO binary drivers are available here curtesy of Fedora!: 
+the VirtIO drivers for improved VM performance. The latest Windows VirtIO binary drivers are available here courtesy of Fedora!: 
       <br/>
       <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win-guest-tools.exe">
         Download VirtIO binary drivers
