@@ -59,6 +59,36 @@ over ride from base
 }
 
 
+
+.post-content {
+    margin-bottom: $spacing-unit;
+  
+    h2 {
+      @include relative-font-size(1.2);
+  
+      @include media-query($on-laptop) {
+        @include relative-font-size(1.1);
+      }
+    }
+  
+    h3 {
+      @include relative-font-size(1.1);
+  
+      @include media-query($on-laptop) {
+        @include relative-font-size(1.0);
+      }
+    }
+  
+    h4 {
+      @include relative-font-size(1.15);
+  
+      @include media-query($on-laptop) {
+        @include relative-font-size(1.1);
+      }
+    }
+  }
+  
+
 //  this changes box content back to default. boot strap uses a different mode
 // *, *::before, *::after {
 //     box-sizing: inherit;
