@@ -61,7 +61,4 @@ Now let's add some bootstrap to our Jekyll site.
 
 
 <br/>
-<p align="center">
-  <img src="/assets/logo_final.svg" height="250px"/>
-</p>
 
