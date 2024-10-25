@@ -64,14 +64,16 @@ over ride from base
     margin-bottom: $spacing-unit;
   
     h2 {
+        font-weight: bold;
       @include relative-font-size(1.2);
-  
+        
       @include media-query($on-laptop) {
         @include relative-font-size(1.1);
       }
     }
   
     h3 {
+        font-weight: bold;
       @include relative-font-size(1.1);
   
       @include media-query($on-laptop) {
@@ -80,6 +82,7 @@ over ride from base
     }
   
     h4 {
+        font-weight: bold;
       @include relative-font-size(1.15);
   
       @include media-query($on-laptop) {
