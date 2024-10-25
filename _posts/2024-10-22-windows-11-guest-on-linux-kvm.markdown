@@ -5,6 +5,7 @@ date:   2024-10-22 20:34:44 -0400
 categories: kvm
 bootstrap-enabled: false
 author: "Ben Erridge"
+permalink: /howto/windows-11-guest-on-linux-kvm/
 ---
 
 <strong>Back to the hacks!</strong>

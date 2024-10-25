@@ -4,6 +4,7 @@ title:  "Let get started!!"
 date:   2024-04-23 23:34:44 -0400
 categories: jekyll update bootstrap
 bootstrap-enabled: true
+permalink: /howto/add-bootstrap-to-jekyll/
 ---
 
 It wouldn't be much of a hacker blog without some hacking. <strong>Let's.. Go!</strong>
