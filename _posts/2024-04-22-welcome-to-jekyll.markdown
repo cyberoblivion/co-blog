@@ -86,7 +86,7 @@ JSON is also easy to add for quick data representation:
 
 ## The Verdict
 
-Jekyll’s versatility in handling syntax highlighting, its Markdown support, and customizable templates make it a great fit for CyberOblivion. However, there are a few things missing out-of-the-box, such as site analytics which are crucial for tracking site performance and user engagement. Also, features like comments and any fancy ui components. I’ve already tackled these issues with a bit of ingenuity and some plugins, and I’ll share more about how I’ve integrated those features in an upcoming post. Stay tuned for more updates as I dive deeper into Jekyll’s many features!
+Jekyll’s versatility in handling syntax highlighting, its Markdown support, and customizable templates make it a great fit for CyberOblivion. However, there are a few things missing out-of-the-box, such as site analytics which are crucial for tracking site performance and user engagement. Also, features like feedback or comments and any fancy ui components are missing. I’ve already tackled these issues with a bit of ingenuity and some plugins, and I’ll share more about how I’ve integrated those features in an upcoming post. Stay tuned for more updates as I dive deeper into Jekyll’s many features!
 
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
