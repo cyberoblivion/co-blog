@@ -11,7 +11,7 @@ Welcome to my Jekyll exploration journey! CyberOblivion runs on Jekyll, a powerf
 
 ## Why Jekyll?
 
-Jekyll sites are simple to set up, and GitHub will host them for free as long as they’re part of a public repository. Since they’re static sites, deploying them is also incredibly easy GitHub has automation in place to push changes to production with just a simple code merge into a specified branch. Jekyll’s simplicity, seamless GitHub support, and Markdown compatibility make it an ideal platform for tech blogs, especially those that delve into code-heavy content and complex topics. 
+Jekyll sites are simple to set up, and GitHub will host them for free as long as they’re part of a public repository. Since they’re static sites, deploying them is also incredibly easy. GitHub has automation in place to push changes to production with just a simple code merge into a specified branch and some configuration of Github Pages and Actions. Jekyll’s simplicity, seamless GitHub support, and Markdown compatibility make it an ideal platform for tech blogs, especially those that delve into code-heavy content and complex topics. 
 
 On top of that, Jekyll offers a wide selection of themes to fit various styles and preferences. Whether it’s highlighting code snippets, organizing content with layouts and includes, or handling Markdown files, Jekyll has a lot to offer for anyone building a tech-oriented site. Below are some code examples to showcase how easy it is to integrate and display code snippets in various languages on a Jekyll site.
 
@@ -94,3 +94,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+
+{% include comments.html %}
