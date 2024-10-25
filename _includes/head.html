@@ -1,6 +1,5 @@
-<head>
-  <!--  jekyll.environment == 'production' and -->
-{%- if site.google_analytics -%}
+<head>  
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
 {%- endif -%}
 
