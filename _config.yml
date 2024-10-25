@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Through in-depth insights and practical solutions, we navigate the digital landscape, empowering developers and architects to stay ahead of industry trends. 
   Join us as we uncover the technologies shaping the future, guided by hands-on expertise and a passion for innovation.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.cyberoblivion.com" # the base hostname & protocol for your site, e.g. 
 #twitter_username: jekyllrb
 github_username:  cyberoblivion
 youtube_username: "@CyberOblivion2"
