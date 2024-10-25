@@ -44,7 +44,7 @@ For starters, adding Bootstrap to any HTML site is simple—just add a CSS link 
 </html>
 {% endhighlight %}
 
-### Customizing Jekyll’s Theme Files for Bootstrap
+### Customizing Jekyll’s Theme Files (minima) for Bootstrap
 
 Jekyll lets you extend or override files in your theme to customize the site’s design. You can start by locating the theme’s directory with this command:
 
