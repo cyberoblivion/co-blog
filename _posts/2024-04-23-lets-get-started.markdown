@@ -1,37 +1,36 @@
 ---
 layout: post
-title:  "Let get started!!"
+title:  "Let's Get Started!"
 date:   2024-04-23 23:34:44 -0400
 categories: jekyll update bootstrap
 bootstrap-enabled: true
 permalink: /howto/add-bootstrap-to-jekyll/
 ---
 
-It wouldn't be much of a hacker blog without some hacking. <strong>Let's.. Go!</strong>
-<p>Let's explore this Jekyll fellow and see if we can can make this basic site a bit more fun..</p>
-<p>First things first </p>
+It wouldn’t be much of a hacker blog without some hacking, right? **Back to the HACKS!**
 
-It's probably a terrible idea to take this nice lightweight Jekyll site and add a bunch of web components and libraries to it
-But that is exactly what I am going to do! 
+Today, we’re exploring Jekyll, our trusty blog platform, and seeing if we can add a bit more style and interactivity to this site by bringing in Bootstrap. 
 
-This turns out to not be very hard at all if you know the basic concepts of a Jekyll site. It's all based on convention and putting the right file in the right location. 
+### Why Bootstrap with Jekyll?
 
-First we should also understand that bootstrap is simple to include on any site you only need to add one css link in the head section and one javascript tag as the last element before the body tag.
+Turning this lightweight Jekyll site into a playground of web components and libraries? Maybe not the most conventional choice—but conventions are overrated, right?
+<br/>
+Adding Bootstrap is actually straightforward once you understand the Jekyll basics. It’s all about following conventions and putting files in the right places. 
 
+### Including Bootstrap in a Basic HTML Page
+For starters, adding Bootstrap to any HTML site is simple—just add a CSS link in the `<head>` and a JavaScript script at the end of the `<body>`. Here’s a basic example that uses Cloudflare as the CDN for Bootstrap:
 
-A basic html page would look somehting like this. This method utilizes cloudflare as a cdn for the necessary files.
-
-{% highlight html%}
+{% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CyberOblivion Blog</title>
-  <!-- Bootstrap CSS -->  
+  <!-- Bootstrap CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" 
-    rel="stylesheet" crossorigin="anonymous">  
-    <!-- other styles to override bootstrap-->
+    rel="stylesheet" crossorigin="anonymous">
+  <!-- Custom styles to override Bootstrap -->
   <link href="{{ "/assets/css/custom.css" | relative_url }}" rel="stylesheet">
 </head>
 <body>
@@ -43,67 +42,65 @@ A basic html page would look somehting like this. This method utilizes cloudflar
     crossorigin="anonymous"></script>
 </body>
 </html>
-
 {% endhighlight %}
 
+### Customizing Jekyll’s Theme Files for Bootstrap
 
-To extend Jekyll sites you override files from the theme.
-To see the contents of the theme and the files in the theme you can first get the them location
+Jekyll lets you extend or override files in your theme to customize the site’s design. You can start by locating the theme’s directory with this command:
 
 {% highlight bash %}
 bundle show <theme-name>
 {% endhighlight %}
 
-this returns the directory location of the theme. You can then explore the directory
-structure in order to understand what you want to overrride.
-putting a file with the same name and location in your jekyll project will cause it to be used in place
-of the file in the theme directory. This is usefull  because often you will want to use the original as
-a template to custize.
+This will show the theme’s directory path, allowing you to explore the structure and understand which files you might want to override. When you copy a file from the theme into your own project (in the same folder structure), Jekyll will use your version instead of the default one. 
 
-You can see the minima directory structure here.
+You can also check out the [Minima theme file structure](https://jekyllrb.com/docs/structure/) on github to see where each layout or include file lives.
 
-<a href="https://jekyllrb.com/docs/structure/">Minima file structure</a>
+#### Overriding `_layouts/default.html` and `_includes/head.html`
+To include Bootstrap, we’ll override minima’s `_layouts/default.html` and `_includes/head.html` files. Copy these files from your theme directory into your project, or download them from the [Minima GitHub repository](https://github.com/jekyll/minima) (make sure to get the right version).
 
-In this case we are going to override _layouts/default.html and _includes/head.html
+Let’s create a new Jekyll site and set up these overrides:
 
-we'll copy the files from the theme into our project folder. you can also get them from minima github repo make sure to get the correct version.<a href="https://github.com/jekyll/minima" >here.</a>
+{% highlight bash %}
+jekyll new new-blog
+cd new-blog/
+mkdir _layouts _includes
+cp /path/to/gems/minima-2.5.2/_layouts/default.html _layouts/
+cp /path/to/gems/minima-2.5.2/_includes/head.html _includes/
+{% endhighlight %}
 
-Below we'll create a new jekyll site and override the files necessary.
-{%highlight bash%}
-jekyll new new-blog;
-cd new-blog/;
-mkdir _layouts _includes;
-cp /home/ben/.local/share/gem/ruby/3.3.0/gems/minima-2.5.2/_layouts/default.html _layouts/;
-cp /home/ben/.local/share/gem/ruby/3.3.0/gems/minima-2.5.2/_includes/head.html _includes/;
-{%endhighlight%}
+### Enabling Bootstrap with a Front Matter Flag
 
-Now we can add the markup for including the bootstrapp css in the _includes/head.html. In this case I thought it was
-a good idea to put a page level flag to enable inclusion of bootstrap. here is code that will only
-include bootstap if there is a flag in the front matter of the page bootstrap-enabled: true. 
+To conditionally include Bootstrap only on pages that need it, we’ll add a `bootstrap-enabled` flag in the front matter of each page that requires Bootstrap. This keeps your site lightweight by loading Bootstrap selectively.
 
-{% highlight markdown %}
+In `_includes/head.html`, add the following code to include Bootstrap CSS only if the page’s front matter has `bootstrap-enabled: true`:
+
+{% highlight liquid %}
 {% raw %}
-{% if page.bootstrap-enabled -%}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-  rel="stylesheet" integrity="sha384-whatever-key" crossorigin="anonymous">
-{%- endif -%}  
+{% if page.bootstrap-enabled %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+  rel="stylesheet" crossorigin="anonymous">
+{% endif %}
 {% endraw %}
 {% endhighlight %}
 
-We also need to update the _layouts/default.html file to include the javascript. 
-{% highlight markdown %}
+Next, update `_layouts/default.html` to include Bootstrap’s JavaScript at the end of the body if the flag is set:
+
+{% highlight liquid %}
 {% raw %}
-    {% if page.bootstrap-enabled == true %}
-        <!-- Include Bootstrap 5 JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" 
-         integrity="sha384-whatever-key" crossorigin="anonymous"></script>
-     {%- endif -%}    
+{% if page.bootstrap-enabled %}
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" 
+    integrity="sha384-whatever-key" crossorigin="anonymous"></script>
+{% endif %}
 {% endraw %}
 {% endhighlight %}
 
-That should do it!
+And that’s it! Now, with the `bootstrap-enabled` flag in the front matter, you control where Bootstrap gets loaded.
 
-Now let's add some bootstrap to our Jekyll site. Here is a simple button that triggers a popup.
+### Adding Bootstrap Components
+Let’s test it out by adding a Bootstrap button that triggers a modal popup. Add this button and modal code to any page:
+
 {% highlight html %}
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch Popup
@@ -133,7 +130,6 @@ Now let's add some bootstrap to our Jekyll site. Here is a simple button that tr
   Launch Popup
 </button>
 
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -142,7 +138,10 @@ Now let's add some bootstrap to our Jekyll site. Here is a simple button that tr
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        This is a simple popup dialog using Bootstrap 5's modal component.
+        <div class="modal-body">
+        <p><strong>Hacker Mode Activated!</strong></p>        
+        <p>Bootstrap is now live and ready to roll. Press the Escape key or Hit "Close"</p>        
+      </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -151,6 +150,10 @@ Now let's add some bootstrap to our Jekyll site. Here is a simple button that tr
   </div>
 </div>
 
-
+---
 <br/>
+Now, let’s add some interactivity to CyberOblivion’s Jekyll blog with Bootstrap! This setup gives you the flexibility to decide which pages load the library, while keeping the design consistent and lightweight.
 
+Ready for more? We’ll keep pushing Jekyll’s limits—stay tuned for the next hack!
+
+{% include comments.html %}
