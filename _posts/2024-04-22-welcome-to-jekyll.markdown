@@ -7,7 +7,7 @@ permalink: /review/jekyll
 ---
 # Exploring Jekyll as the CyberOblivion Blog Platform
 
-Welcome to my Jekyll exploration journey! CyberOblivion runs on Jekyll, a powerful static site generator that has quickly become my go-to platform for building this tech blog. I’m learning to harness its features to create a site that’s fast, flexible, and (dare I say) fun to work on. Here are some examples showing off Jekyll's built-in syntax highlighting and more.
+Welcome to my Jekyll exploration journey! The CyberOblivion blog runs on Jekyll, a powerful static site generator that has quickly become my go-to platform for building this tech blog. I’m learning to harness its features to create a site that’s fast, flexible, and (dare I say) fun to work on. Here are some examples showing off Jekyll's built-in syntax highlighting and more.
 
 ## Why Jekyll?
 
@@ -17,7 +17,7 @@ On top of that, Jekyll offers a wide selection of themes to fit various styles a
 
 ## Syntax Highlighting Examples
 
-To show off some of Jekyll's syntax highlighting capabilities, here are some code examples in different languages:
+To showcase Jekyll's built-in syntax highlighting with the default highlighter, Rouge, here are some code examples in different languages:
 
 ### 1. HTML Example
 
