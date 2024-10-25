@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-04-22 23:34:44 -0400
-categories: jekyll update
+categories: jekyll review
 permalink: /review/jekyll
 ---
 # Exploring Jekyll as My Blog Platform
