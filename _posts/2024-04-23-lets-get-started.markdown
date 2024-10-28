@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Let's Get Started!"
+title:  "Adding bootstrap to Jekyll"
 date:   2024-04-23 23:34:44 -0400
 categories: jekyll update bootstrap
 bootstrap-enabled: true
 permalink: /howto/add-bootstrap-to-jekyll/
+description: "Learn how to add Bootstrap to your Jekyll site with this step-by-step guide. From including CSS and JavaScript to customizing theme files, this tutorial shows you how to enhance your Jekyll blog with responsive design and interactive components. Perfect for developers looking to add style to their static sites!"
 ---
 
 It wouldn’t be much of a hacker blog without some hacking, right? **Back to the HACKS!**

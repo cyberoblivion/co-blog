@@ -4,6 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2024-04-22 23:34:44 -0400
 categories: jekyll review
 permalink: /review/jekyll
+description: "Explore a detailed review of Jekyll, the powerful static site generator for developers. Learn about its features, benefits, and best use cases, and discover why Jekyll is a popular choice for building fast and flexible websites. Ideal for those considering Jekyll for their next blog or project."
 ---
 # Exploring Jekyll as the CyberOblivion Blog Platform
 
