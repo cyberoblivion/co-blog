@@ -110,7 +110,7 @@ Markdown makes it easy to format text and is a perfect fit for tech blogs.
 
 ### Adding the Vue.js Script
 **Here's the code**
-or try it on [Demo on CodePen](https://codepen.io/Ben-Erridge/pen/mdNxzVB)
+or try it [on CodePen](https://codepen.io/Ben-Erridge/pen/mdNxzVB)
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.prod.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -188,7 +188,7 @@ Integrating Vue.js into a Jekyll blog can bring dynamic interactivity to your st
 ## Conclusion
 With this setup, you now have a responsive Markdown editor that updates instantly, showcasing how Vue.js can bring interactive power to a static Jekyll site. Vue is a fascinating framework, showing us that frontend complexity is catching up to backend architecture! Tools like Vue help us keep code secure, efficient, and polished all essentials in today’s web development.
 
-Enough for now… time to get back to the HACKS!
+Enough for now… time to get **back to the HACKS!**
 
 All the code for this blog is available on github 
 [here](https://github.com/cyberoblivion/co-blog)
