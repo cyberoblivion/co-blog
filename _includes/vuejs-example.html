@@ -1,0 +1,49 @@
+
+{% raw %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.prod.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script> <!-- Lodash CDN -->
+
+<div id="app">
+    <div class="editor">
+      <textarea class="input" v-model="input"></textarea>
+      <div class="output" v-html="output"></div>
+    </div>
+  </div>
+  
+  <script>
+    const { createApp } = Vue;
+  
+    createApp({
+      data() {
+        return {
+            input: `# Welcome to CyberOblivion 🚀
+
+## Explore Markdown + Vue
+
+- **Bold** text, _italic_ text
+- Code samples: \`console.log('Hello World')\`
+- [Visit CyberOblivion](https://blog.cyberoblivion.com)
+
+### Why Markdown?
+Markdown makes it easy to format text and is a perfect fit for tech blogs.
+
+> "Explore. Learn. Innovate."`
+        };
+      },
+      computed: {
+        output() {
+          return marked.parse(this.input);
+        }
+      },
+      methods: {
+        update: _.debounce(function(e) {
+          this.input = e.target.value;
+        }, 100)
+      }
+    }).mount('#app');
+  </script>
+
+
+  {% endraw %}
