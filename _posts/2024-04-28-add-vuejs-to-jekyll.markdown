@@ -50,10 +50,10 @@ To showcase Vue’s capabilities, let’s build a simple markdown editor. The ed
 
 We'll also use **Lodash** for debouncing input changes and **Marked.js** to render markdown into HTML.
 
-**Here's what it looks like:**
+**Here's what it looks like:**  
 <div id="app">    
     <div class="editor">
-      <strong>Markdown</strong>
+      <strong>Markdown Editor:</strong> type markdown in this input and te output window will automatically update
       <textarea class="input" v-model="input"></textarea>      
       <br/>
       <strong>Preview:</strong>
@@ -110,6 +110,7 @@ Markdown makes it easy to format text and is a perfect fit for tech blogs.
 
 ### Adding the Vue.js Script
 **Here's the code**
+or try it on [Demo on CodePen](https://codepen.io/Ben-Erridge/pen/mdNxzVB)
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.prod.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -173,7 +174,8 @@ Vue’s `v-html` directive displays `output` as HTML inside the preview area. It
 The `marked.parse()` function from the Marked.js library converts markdown syntax from `input` into HTML. This HTML displays as styled content within the output area, allowing users to visualize their formatted content in real time.
 
 5. Optional: Improving Performance with Debouncing
-For heavy input use cases, consider adding Lodash’s `debounce` function. This handy optimization limits the rate of updates, ensuring Vue doesn’t recompute `output` excessively, boosting performance during rapid typing.
+For heavy input use cases, consider adding Lodash’s `debounce` function. This handy optimization limits the rate of updates, ensuring Vue doesn’t recompute `output` excessively, boosting performance during rapid typing. [Learn about debouncing and how it improves performance](https://css-tricks.com/debouncing-throttling-explained-examples/)
+
 
 
 
@@ -184,7 +186,9 @@ Integrating Vue.js into a Jekyll blog can bring dynamic interactivity to your st
 ---
 
 ## Conclusion
-With these updates, you now have a fully functioning Markdown editor that listens for input changes and renders formatted output instantly. This feature is a practical example of how Vue.js can bring interactivity to a static Jekyll site.
+With this setup, you now have a responsive Markdown editor that updates instantly, showcasing how Vue.js can bring interactive power to a static Jekyll site. Vue is a fascinating framework, showing us that frontend complexity is catching up to backend architecture! Tools like Vue help us keep code secure, efficient, and polished all essentials in today’s web development.
+
+Enough for now… time to get back to the HACKS!
 
 All the code for this blog is available on github 
 [here](https://github.com/cyberoblivion/co-blog)
