@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Adding bootstrap to Jekyll"
+title:  "How to Add Bootstrap to Jekyll"
 date:   2024-04-23 23:34:44 -0400
 categories: jekyll update bootstrap
 bootstrap-enabled: true
@@ -55,7 +55,7 @@ bundle show <theme-name>
 
 This will show the theme’s directory path, allowing you to explore the structure and understand which files you might want to override. When you copy a file from the theme into your own project (in the same folder structure), Jekyll will use your version instead of the default one. 
 
-You can also check out the [Minima theme file structure](https://jekyllrb.com/docs/structure/) on github to see where each layout or include file lives.
+You can also see the [Minima theme file structure](https://jekyllrb.com/docs/structure/) on the jekyll home page or the [github repository](https://github.com/jekyll/minima) where the include files live.
 
 #### Overriding `_layouts/default.html` and `_includes/head.html`
 To include Bootstrap, we’ll override minima’s `_layouts/default.html` and `_includes/head.html` files. Copy these files from your theme directory into your project, or download them from the [Minima GitHub repository](https://github.com/jekyll/minima) (make sure to get the right version).
@@ -66,8 +66,8 @@ Let’s create a new Jekyll site and set up these overrides:
 jekyll new new-blog
 cd new-blog/
 mkdir _layouts _includes
-cp /path/to/gems/minima-2.5.2/_layouts/default.html _layouts/
-cp /path/to/gems/minima-2.5.2/_includes/head.html _includes/
+cp `bundle show minima`/_layouts/default.html _layouts/
+cp `bundle show minima`/_includes/head.html _includes/
 {% endhighlight %}
 
 ### Enabling Bootstrap with a Front Matter Flag
