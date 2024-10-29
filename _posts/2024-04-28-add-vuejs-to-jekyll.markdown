@@ -53,7 +53,7 @@ We'll also use **Lodash** for debouncing input changes and **Marked.js** to rend
 **Here's what it looks like:**  
 <div id="app">    
     <div class="editor">
-      <strong>Markdown Editor:</strong> type markdown in this input and te output window will automatically update
+      <strong>Markdown Editor:</strong> type markdown in this input and the output area will automatically update
       <textarea class="input" v-model="input"></textarea>      
       <br/>
       <strong>Preview:</strong>
