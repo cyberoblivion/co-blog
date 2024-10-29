@@ -12,11 +12,23 @@ description: "Learn how to enhance your Jekyll site with Vue.js for dynamic, int
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script> <!-- debounce CDN -->
 
-## Adding Vue.js to Jekyll for a More Interactive Blog
+## Experimenting with Vue.js in Jekyll: Can You Make Your Blog Interactive?
 
-In this post, we’ll explore adding Vue.js to a Jekyll blog to create a dynamic, interactive experience without any complicated setup. Using Vue with Jekyll is perfect for adding interactive elements like image galleries, dynamic tables, and live previews—all while keeping the main structure static and lightweight.
+If you've ever thought about adding more interactivity to your Jekyll blog, you might be tempted to try Vue.js. Is it a natural fit? Not exactly—but it’s doable, and it’s a fun way to explore what Vue has to offer without fully committing to a single-page application setup.
 
-You might already know how to [add Bootstrap to Jekyll]({{ site.baseurl }}/howto/add-bootstrap-to-jekyll/), but today we'll try out Vue.js. This experiment will give us insights into using Vue in the Jekyll frontend, enabling us to create features like real-time markdown previews, galleries, and more interactive tables and charts.
+In this post, we’ll walk through the essentials of adding Vue to Jekyll to see what’s possible, what challenges come with it, and whether the added functionality is worth the effort. Vue can be used to add interactive touches think live previews, galleries, and even animated tables to a Jekyll site. But, like any experiment, it comes with pros and cons.
+
+
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+      <div class="info-content">
+      <strong>Note:</strong>
+          We've already mastered <a href="{{ site.baseurl }}/howto/add-bootstrap-to-jekyll/">adding Bootstrap to Jekyll.</a>
+  </div>
+</div>
+
+Let's get into the code and start crafting a more interactive, responsive experience one Vue component at a time.
+
 
 ### Setting Up Vue for Jekyll Pages
 
@@ -26,8 +38,6 @@ If you were building a standalone Vue project, you’d typically scaffold it wit
 {% endhighlight %}
 
 This command sets up a full Vue project with options for tools like Vue Router, Pinia for state management, Vitest for testing, and more. However, here we’ll keep things simple by using Vue directly in our HTML and Markdown pages with no need for bundling or compiling.
-
-Vue is extensive but we are going to use it in our frontent for this demo. We will keep it simple and work with Vue in the plain html/mardown pages of Jekyll and avoid any need to compile any code.
 
 ### Inline Setup of Vue.js in Jekyll
 Instead of configuring Vue through a front matter flag (like we did with Bootstrap), we’ll keep everything within this Markdown post. This approach works well for quick demos and makes it easy to see changes without extra setup.
