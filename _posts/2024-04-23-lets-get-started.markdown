@@ -5,6 +5,7 @@ date:   2024-04-23 23:34:44 -0400
 categories: jekyll update bootstrap
 bootstrap-enabled: true
 permalink: /howto/add-bootstrap-to-jekyll/
+author: "Ben Erridge"
 description: "Learn how to add Bootstrap to your Jekyll site with this step-by-step guide. From including CSS and JavaScript to customizing theme files, this tutorial shows you how to enhance your Jekyll blog with responsive design and interactive components. Perfect for developers looking to add style to their static sites!"
 ---
 

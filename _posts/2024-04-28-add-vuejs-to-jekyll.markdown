@@ -4,6 +4,7 @@ title:  "How to Add Vue.js to Jekyll"
 date:   2024-10-28 11:34:44 -0400
 categories: jekyll update vuejs
 permalink: /howto/add-vuejs-to-jekyll/
+author: "Ben Erridge"
 description: "Discover how to integrate Vue.js into your Jekyll site for adding dynamic elements, such as live previews and interactive components. This guide explores the essentials, benefits, and challenges of enhancing static Jekyll pages with Vue.js."
 ---
 
