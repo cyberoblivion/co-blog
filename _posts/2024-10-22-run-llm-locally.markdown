@@ -41,7 +41,7 @@ Now let’s install a lightweight model. We’ll use tinydolphin for its speed a
     <div class="info-content">
     <strong>Tip</strong>
        You can find more models in the  <a href="https://ollama.com/library?sort=popular">Ollama Library here</a>
-        We’ve tested llama3.1:8b, gemma, phi3.5, and smollm, all of which perform well, though tinydolphin provides the best response times.
+       We’ve tested llama3.1:8b, gemma, phi3.5, and smollm, all of which perform well, though tinydolphin provides the best response times.
     </div>
 </div>  
 ```bash
@@ -59,6 +59,15 @@ To install other models with specific parameter sizes, use a command like this:
 ```
 
 ![Load llama 3.1 8b](/assets/ollama/ollama-install-llama318b.png)
+
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+    <div class="info-content">
+    <strong>Note:</strong>
+       For more information about running the Ollama service see the
+<a href="https://github.com/ollama/ollama/blob/main/docs/faq.md">FAQ on GitHub</a>
+    </div>
+</div>  
 
 
 ### Step 4 Testing the Model with a Basic Request
@@ -175,7 +184,9 @@ You should receive a response like this:
 ```
 
 ## Wrapping Up
-With Ollama and a client set up, you now have a local environment for experimenting with LLMs! Running models like tinydolphin locally can save costs, enhance data privacy, and provide a playground for building custom AI applications.
+With [Ollama](https://ollama.com/) and a client set up, you now have a local environment for experimenting with LLMs! Running models like tinydolphin locally can save costs, enhance data privacy, and provide a playground for building custom AI applications.
+
+Stick around coming up we're going to show how to create and use embeddings!
 
 <strong>Back to the hacks!</strong>
 
