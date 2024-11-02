@@ -120,7 +120,7 @@ firmware, and add a vTPM, which are required for Windows 11
       <img src="{{ "/assets/win11kvm/new-vm-change-firmware.png" | relative_url }}" width="300px" alt="new vm change firmware"/>
     </li>
     <li>
-      <strong>Important:</strong> Important: Ensure vTPM is configured for Windows 11 compatibility.
+      <strong>Important:</strong> Ensure vTPM is configured for Windows 11 compatibility.
       Update the firmware version, and add a vTPM, which are required for Windows 11
       <br/>
       Model: <strong>TIS</strong>
