@@ -38,13 +38,13 @@ Dive into the vast world of technology. We bring you insights, guides, and resou
 
 From foundational knowledge to advanced techniques, our mission is to fuel your learning journey. Absorb, understand, and stay ahead.
 
-## Level Up 🚀
-
-Put knowledge into action. Whether you’re coding, securing systems, or optimizing workflows, CyberOblivion is here to help you enhance your skills and reach new heights.
-
 ## Innovate 💡
 
 Think outside the box. Technology is a tool for change, and we believe in using it to create and innovate, paving the way for the future.
+
+## Level Up 🚀
+
+Put knowledge into action. Whether you’re coding, securing systems, or optimizing workflows, CyberOblivion is here to help you enhance your skills and reach new heights.
 
 ---
 
