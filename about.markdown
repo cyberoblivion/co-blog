@@ -48,4 +48,4 @@ Think outside the box. Technology is a tool for change, and we believe in using 
 
 ---
 
-Join us on this journey to **Explore. Learn. Level Up. Innovate.**
+Join us on this journey to **Explore. Learn. Innovate. Level Up.** &copy; 2024
