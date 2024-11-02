@@ -68,7 +68,7 @@ sudo systemctl enable libvirtd;
         </div>      
       start virt-manager 
       {% highlight shell %}
-sudo virt-manager gui
+sudo virt-manager
       {% endhighlight %}
       Create new VM select File → New Virtual Machine.<br/>
       <img src="{{ "/assets/win11kvm/new-vm-step-0.png" | relative_url }}" width="300px" alt="new vm step 0"/>
