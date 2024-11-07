@@ -29,8 +29,8 @@ This blog is built with Jekyll, making it simple to develop, test, and deploy.
 
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/cyberoblivion/co-blog
+   cd co-blog
 ```
 2. Install dependencies
 ```bash
@@ -58,7 +58,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions, suggestions, or collaboration ideas, reach out to us at [CyberOblivion](https://blog.cyberoblivion.com/contact).
+For questions, suggestions, or collaboration ideas, reach out to us via email at [info@cyberoblivion.com](mailto:info@cyberoblivion.com).
 
 ---
 
