@@ -4,7 +4,7 @@ Welcome to the source repository for [CyberOblivion](https://blog.cyberoblivion.
 
 ## About the Blog
 
-CyberOblivion is more than just another tech blog. It’s a community for developers, engineers, architects, and tech enthusiasts eager to master complex topics and implement real-world solutions. Whether you're configuring Linux environments, securing networks, or deploying containerized applications, CyberOblivion has something for you.
+CyberOblivion is more than just another tech blog. It’s a community for developers, engineers, architects, and tech enthusiasts eager to master complex topics and implement real-world solutions. Whether you're configuring Linux environments, coding the next killer, or deploying containerized applications, CyberOblivion has something for you.
 
 ## What You'll Find
 
@@ -54,7 +54,7 @@ We welcome contributions! Feel free to fork this repository, make updates, and s
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
 ## Contact
 
