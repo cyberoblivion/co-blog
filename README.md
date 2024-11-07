@@ -28,6 +28,38 @@ This blog is built with Jekyll, making it simple to develop, test, and deploy.
 ### Installation
 
 1. **Clone the repository**:
-   ```bash
+```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+```
+2. Install dependencies
+```bash
+   bundle install
+```
+3. Run the blog locally:
+```bash
+   bundle exec jekyll serve
+```
+
+### Contributing
+We welcome contributions! Feel free to fork this repository, make updates, and submit a pull request. To report issues or suggest improvements, open an issue in the repository.
+
+### Contribution Guidelines
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-branch-name`).
+3. Commit your changes with clear commit messages.
+4. Push to the branch (`git push origin feature-branch-name`).
+5. Create a pull request with a summary of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions, suggestions, or collaboration ideas, reach out to us at [CyberOblivion](https://blog.cyberoblivion.com/contact).
+
+---
+
+Thank you for exploring CyberOblivion! Let’s push the boundaries of technology—together.
