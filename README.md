@@ -62,4 +62,4 @@ For questions, suggestions, or collaboration ideas, reach out to us via email at
 
 ---
 
-Thank you for exploring CyberOblivion! Let’s push the boundaries of technology—together.
+Thank you for exploring CyberOblivion! to **Explore. Learn. Level Up.**
