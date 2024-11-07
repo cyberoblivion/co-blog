@@ -9,7 +9,7 @@ description: "Explore a detailed review of Jekyll, the powerful static site gene
 ---
 # Exploring Jekyll as the CyberOblivion Blog Platform
 
-Welcome to my Jekyll exploration journey! The CyberOblivion blog runs on Jekyll, a powerful static site generator that has quickly become my go-to platform for building this tech blog. I’m learning to harness its features to create a site that’s fast, flexible, and (dare I say) fun to work on. Here are some examples showing off Jekyll's built-in syntax highlighting and more.
+Welcome to my Jekyll exploration journey! The CyberOblivion blog runs on Jekyll, a powerful static site generator that has quickly become my go-to platform for building this tech blog. I’m learning to harness its features to create a site that’s fast, flexible, and (dare I say) fun to work on.
 
 ## Why Jekyll?
 
