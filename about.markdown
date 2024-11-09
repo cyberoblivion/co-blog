@@ -48,4 +48,4 @@ Put knowledge into action. Whether you’re coding, securing systems, or optimiz
 
 ---
 
-Join us on this journey to **Explore. Learn. Innovate. Level Up.** &copy; 2024
+Join us on this journey to **Explore. Learn. Innovate. Level Up.**
