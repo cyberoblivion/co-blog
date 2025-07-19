@@ -15,7 +15,7 @@ description: "Learn how to run a Windows 11 virtual machine on Linux using KVM. 
 
 <p>In this guide, we'll walk through configuring a KVM (Kernel-based Virtual Machine) on a Fedora host to run a Windows 11 guest instance. This setup ensures that Windows continues to boot and function properly, even after installation and multiple reboots.</p>
 
-<p>I prefer using Fedora Linux as my primary desktop and development environment. However, there are times when I need to run Windows—whether it's to test software compatibility on the Edge browser, try out a Windows-only application, or use niche tools like the Bose firmware upgrader that require a Windows operating system. In these cases, running a Windows virtual machine (VM) is far more convenient than dual-booting, as it allows me to switch between Linux and Windows seamlessly without restarting my PC.</p>
+<p>I prefer using Fedora Linux as my primary desktop and development environment. However, there are times when I need to run Windows; whether it's to test software compatibility on the Edge browser, try out a Windows-only application, or use niche tools like the Bose firmware upgrader that require a Windows operating system. In these cases, running a Windows virtual machine (VM) is far more convenient than dual-booting, as it allows me to switch between Linux and Windows seamlessly without restarting my PC.</p>
 <p>One of the key challenges when running Windows 11 in a virtual machine on Linux is configuring the firmware and TPM module to ensure compatibility with Windows 11 requirements.</p>
 
 <h2>Why a TPM is Important for Running Windows 11</h2>

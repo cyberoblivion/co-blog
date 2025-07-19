@@ -15,7 +15,7 @@ description: "Discover how to integrate Vue.js into your Jekyll site for adding 
 
 ## Experimenting with Vue.js in Jekyll: Can You Make Your Blog Interactive?
 
-If you've ever thought about adding more interactivity to your Jekyll blog, you might be tempted to try Vue.js. Is it a natural fit? Not exactly—but it’s doable, and it’s a fun way to explore what Vue has to offer without fully committing to a single-page application setup.
+If you've ever thought about adding more interactivity to your Jekyll blog, you might be tempted to try Vue.js. Is it a natural fit? Not exactly; but it’s doable, and it’s a fun way to explore what Vue has to offer without fully committing to a single-page application setup.
 
 In this post, we’ll walk through the essentials of adding Vue to Jekyll to see what’s possible, what challenges come with it, and whether the added functionality is worth the effort. Vue can be used to add interactive touches think live previews, galleries, and even animated tables to a Jekyll site. But, like any experiment, it comes with pros and cons.
 
@@ -46,8 +46,8 @@ Instead of configuring Vue through a front matter flag (like we did with Bootstr
 ### Live Markdown Editor with Vue.js
 To showcase Vue’s capabilities, let’s build a simple markdown editor. The editor will include:
 
-1. A Markdown input—where users can type markdown.
-2. A Live Preview—showing the formatted markdown in real-time.
+1. A Markdown input; where users can type markdown.
+2. A Live Preview; showing the formatted markdown in real-time.
 
 We'll also use **Lodash** for debouncing input changes and **Marked.js** to render markdown into HTML.
 
@@ -166,7 +166,7 @@ Markdown makes it easy to format text and is a perfect fit for tech blogs.
 The directive `v-model="input"` connects the `input` data property to the `<textarea>`. As users type, the `input` property updates in real time, ensuring changes reflect immediately.
 
 2. Using a Computed Property for Instant Updates
-The `output` computed property transforms the markdown in `input` into HTML. This property is reactive, meaning that any change to `input` automatically updates `output`—no extra function calls needed.
+The `output` computed property transforms the markdown in `input` into HTML. This property is reactive, meaning that any change to `input` automatically updates `output`; no extra function calls needed.
 
 3. Rendering HTML with the `v-html` Directive
 Vue’s `v-html` directive displays `output` as HTML inside the preview area. It’s perfect for rendering raw HTML safely, bypassing Vue’s default text rendering for a direct, styled preview of the markdown.

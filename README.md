@@ -1,6 +1,6 @@
 # CyberOblivion Blog
 
-Welcome to the source repository for [CyberOblivion](https://blog.cyberoblivion.com)—a blog dedicated to exploring the latest in tech, from software development and cloud infrastructure to AI, security, and networking. Our blog is powered by [Jekyll](https://jekyllrb.com/) and serves as a hub for in-depth tutorials, practical insights, and discussions designed for tech professionals and enthusiasts alike.
+Welcome to the source repository for [CyberOblivion](https://blog.cyberoblivion.com); a blog dedicated to exploring the latest in tech, from software development and cloud infrastructure to AI, security, and networking. Our blog is powered by [Jekyll](https://jekyllrb.com/) and serves as a hub for in-depth tutorials, practical insights, and discussions designed for tech professionals and enthusiasts alike.
 
 ## About the Blog
 

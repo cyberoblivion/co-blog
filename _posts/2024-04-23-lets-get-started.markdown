@@ -15,12 +15,12 @@ Today, we’re exploring Jekyll, our trusty blog platform, and seeing if we can 
 
 ### Why Bootstrap with Jekyll?
 
-Turning this lightweight Jekyll site into a playground of web components and libraries? Maybe not the most conventional choice—but conventions are overrated, right?
+Turning this lightweight Jekyll site into a playground of web components and libraries? Maybe not the most conventional choice; but conventions are overrated, right?
 <br/>
 Adding Bootstrap is actually straightforward once you understand the Jekyll basics. It’s all about following conventions and putting files in the right places. 
 
 ### Including Bootstrap in a Basic HTML Page
-For starters, adding Bootstrap to any HTML site is simple—just add a CSS link in the `<head>` and a JavaScript script at the end of the `<body>`. Here’s a basic example that uses Cloudflare as the CDN for Bootstrap:
+For starters, adding Bootstrap to any HTML site is simple; just add a CSS link in the `<head>` and a JavaScript script at the end of the `<body>`. Here’s a basic example that uses Cloudflare as the CDN for Bootstrap:
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -156,6 +156,6 @@ Let’s test it out by adding a Bootstrap button that triggers a modal popup. Ad
 <br/>
 Now, let’s add some interactivity to CyberOblivion’s Jekyll blog with Bootstrap! This setup gives you the flexibility to decide which pages load the library, while keeping the design consistent and lightweight.
 
-Ready for more? We’ll keep pushing Jekyll’s limits—stay tuned for the next hack!
+Ready for more? We’ll keep pushing Jekyll’s limits; stay tuned for the next hack!
 
 {% include comments.html %}
