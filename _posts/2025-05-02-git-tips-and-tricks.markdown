@@ -336,6 +336,22 @@ source ~/.bashrc
 
 ---
 
+## What's Next: Bringing This Setup to Windows
+
+Love this Linux-based workflow but stuck on Windows? Good news; you don't have to choose between operating systems anymore.
+
+In the next post, we'll explore **Windows Subsystem for Linux (WSL)**, which lets you run a full Linux environment directly on Windows 11. No dual boot, no virtual machines, just native Linux performance with all the Windows convenience.
+
+With WSL, you can:
+- Use this exact bash configuration and git setup on Windows
+- Run Linux command-line tools alongside Windows applications
+- Keep your `~/dev/` directory structure and workflow intact
+- Switch seamlessly between PowerShell and bash
+
+Think of it as the best of both worlds; Windows for your desktop apps and gaming, Linux for your development workflow. We'll walk through installation, configuration, and integrating WSL with VS Code, Windows Terminal, and your existing Windows tools.
+
+Stay tuned for that deep dive. It's a game changer for developers who need both ecosystems.
+
 ## Conclusion
 
 Your development environment should work for you, not against you. This setup gives me fast navigation, powerful git shortcuts, and the visibility I need to work confidently.
