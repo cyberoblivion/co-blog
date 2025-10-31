@@ -438,6 +438,90 @@ generateHosts = false
 
 You can add additional settings as needed. Check the [official WSL configuration documentation](https://learn.microsoft.com/en-us/windows/wsl/wsl-config) for more options.
 
+## Configuring WSL 2 Resource Limits with .wslconfig
+
+By default, WSL 2 can use up to 50% of your total system memory and all available CPU cores. If you're running resource-intensive workloads or want more control over WSL's resource allocation, you can configure limits using `.wslconfig`.
+
+### Creating .wslconfig
+
+Create or edit `C:\Users\YourName\.wslconfig` in Windows (not in WSL):
+
+**From PowerShell:**
+```powershell
+notepad $env:USERPROFILE\.wslconfig
+```
+
+**Or from WSL:**
+```bash
+notepad.exe /mnt/c/Users/YourName/.wslconfig
+```
+
+### Example .wslconfig Configuration
+
+```ini
+[wsl2]
+# Limit memory to 8GB (adjust based on your needs)
+memory=8GB
+
+# Limit CPU cores to 4
+processors=4
+
+# Set swap size to 2GB
+swap=2GB
+
+# Disable swap file (optional, for maximum performance)
+# swap=0
+
+# How much swap space to allocate (percentage of memory)
+swapfile=%USERPROFILE%\\AppData\\Local\\Temp\\swap.vhdx
+
+# Enable localhost forwarding (allows accessing WSL services from Windows)
+localhostForwarding=true
+```
+
+### Understanding the Settings
+
+**Memory Limits:**
+- `memory=8GB` - Caps WSL 2 at 8GB of RAM
+- Useful if you run Windows applications alongside WSL
+- Default is 50% of total RAM or 8GB, whichever is less
+
+**CPU Limits:**
+- `processors=4` - Limits WSL to 4 CPU cores
+- Useful for preventing WSL from monopolizing CPU during builds
+- Default is all available processors
+
+**Swap Configuration:**
+- `swap=2GB` - Sets swap file size
+- `swap=0` - Disables swap entirely (better performance but higher memory pressure)
+- Default is 25% of memory size
+
+**When to Adjust These Settings:**
+
+- **Heavy builds** - Increase memory and processors for faster compilation
+- **Resource constraints** - Limit WSL if you need RAM/CPU for Windows applications
+- **Multiple WSL instances** - Reduce limits if running several distributions simultaneously
+- **Performance tuning** - Disable swap for maximum speed (ensure adequate RAM)
+
+### Apply the Changes
+
+After editing `.wslconfig`, restart WSL completely:
+
+```powershell
+wsl --shutdown
+wsl -d al2023
+```
+
+Your new resource limits will take effect immediately.
+
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+    <div class="info-content">
+    <strong>Performance Note:</strong>
+    The <code>.wslconfig</code> file applies globally to ALL WSL 2 distributions on your system. If you run multiple distros simultaneously, they share these resource limits. Per-instance configuration is done via <code>/etc/wsl.conf</code> inside each distribution.
+    </div>
+</div>
+
 ## Bringing Your Linux Dev Environment to WSL
 
 Remember the [development environment setup]({{ site.baseurl }}/howto/development-env-setup/) we covered? It works perfectly in WSL. Here's how to migrate:
