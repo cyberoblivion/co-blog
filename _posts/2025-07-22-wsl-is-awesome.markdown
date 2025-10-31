@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux Development on Windows with WSL 2: The Complete Guide"
+title:  "Linux Development on Windows with WSL 2"
 date:   2025-07-22 20:34:44 -0400
 categories: development howto wsl
 bootstrap-enabled: false
