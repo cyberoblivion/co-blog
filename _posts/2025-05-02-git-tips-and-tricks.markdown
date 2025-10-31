@@ -11,8 +11,6 @@ description: "A deep dive into my personal development environment setup, includ
 
 Every developer has their own way of organizing their workspace. Some like chaos, some crave order. Me? I'm somewhere in between; but I've landed on a setup that keeps me productive without getting in my way. Let's walk through how I configure my development environment, from directory structure to git aliases that save me countless keystrokes.
 
-**Back to the HACKS!**
-
 ## Directory Structure: Keep It Simple
 
 My development workspace lives under `~/dev/` with two main subdirectories:
@@ -44,13 +42,21 @@ Here's what typically lives in each:
 
 **`~/dev/utils/`** contains:
 - Standalone utility binaries (like winbox64.exe for RouterOS management)
-- SDK installations (Google Cloud SDK, etc.)
+- SDK installations ([Google Cloud SDK](https://cloud.google.com/sdk), [Eclipse](https://www.eclipse.org/), [IntelliJ](https://www.jetbrains.com/idea/), etc.)
 - Build tools and CLI utilities
 - Scripts that work across multiple projects
 
 ## Bash Configuration: Power User Settings
 
 Let's dive into my `.bashrc` configuration. This file is where the magic happens; it's loaded every time you open a terminal and sets up your environment.
+
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+    <div class="info-content">
+    <strong>Full Configuration:</strong>
+    You can view my complete <code>.bashrc</code> file on GitHub <a href="https://github.com/cyberoblivion/co-util/blob/master/.bashrc">here</a>.
+    </div>
+</div>
 
 ### History Settings: Never Lose a Command Again
 
@@ -74,7 +80,7 @@ alias winbox='sudo wine /home/ben/dev/utils/winbox64.exe'
 
 **`myip`**: Query Cloudflare's DNS to get your public IP. No need to visit whatismyip.com.
 
-**`winbox`**: Launch MikroTik's WinBox for RouterOS management via Wine. Network admin life.
+**`winbox`**: Launch [MikroTik's](https://mikrotik.com/) WinBox for RouterOS management via Wine. Network admin life.
 
 ### Git Prompt Integration
 
@@ -109,6 +115,14 @@ export SDKMAN_DIR="$HOME/.sdkman"
 ## Git Configuration: Aliases That Save Hours
 
 Now for the real power user stuff. My `.gitconfig` file contains aliases that make git operations lightning-fast. Let's break down each one:
+
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+    <div class="info-content">
+    <strong>Full Configuration:</strong>
+    You can view my complete <code>.gitconfig</code> file on GitHub <a href="https://github.com/cyberoblivion/co-util/blob/master/.gitconfig">here</a>.
+    </div>
+</div>
 
 ### Basic Shortcuts
 
@@ -158,6 +172,10 @@ $ git in
 * 7e9a1c4 Merge pull request #42
 * 5b3f8d2 Update dependencies
 ```
+
+Here's what `git out` looks like in action:
+
+![Git Out Command Example](/assets/git-out-command.png)
 
 ### Cherry-Pick Shortcut
 
@@ -237,6 +255,21 @@ git co -b review-patch                  # Create review branch
 git ap patch-file.patch                 # Apply patch ignoring whitespace
 git s                                   # Verify changes
 ```
+
+### Why This Makes OS Migration Painless
+
+Having everything under `~/dev/` is a game changer when switching operating systems or setting up a new machine. Instead of hunting through scattered directories (`/opt/`, `~/Documents/`, `~/workspace/`, etc.), everything development-related lives in one place.
+
+Migrating to a new system? Simple:
+```bash
+# On old machine
+tar -czf dev-backup.tar.gz ~/dev/
+
+# On new machine
+tar -xzf dev-backup.tar.gz -C ~/
+```
+
+Copy your dotfiles (`.bashrc`, `.gitconfig`), run `bundle install` or `npm install` in your projects, and you're back up and running. No guessing where you put that utility script three months ago. No recreating directory structures from memory. Everything just works.
 
 ## Why This Setup Works
 
