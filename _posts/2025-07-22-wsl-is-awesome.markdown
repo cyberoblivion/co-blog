@@ -394,6 +394,10 @@ To integrate Claude Code with VS Code:
    - Follow the authentication prompts
    - Or run from terminal: `claude auth login`
 
+![Claude Code in VS Code with WSL](/assets/wsl/vs-code-claude.png)
+
+Once connected, you'll see the Claude Code interface in VS Code's sidebar, ready to assist with code generation, debugging, and analysis—all running natively in your WSL environment.
+
 #### Using Claude Code in WSL
 
 Once installed, Claude Code can:
