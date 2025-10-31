@@ -340,7 +340,7 @@ source ~/.bashrc
 
 Love this Linux-based workflow but stuck on Windows? Good news; you don't have to choose between operating systems anymore.
 
-In the next post, we'll explore **Windows Subsystem for Linux (WSL)**, which lets you run a full Linux environment directly on Windows 11. No dual boot, no virtual machines, just native Linux performance with all the Windows convenience.
+In our [complete guide to WSL 2]({{ site.baseurl }}/howto/setup-wsl-2/), we explore **Windows Subsystem for Linux**, which lets you run a full Linux environment directly on Windows 11. No dual boot, no virtual machines, just native Linux performance with all the Windows convenience.
 
 With WSL, you can:
 - Use this exact bash configuration and git setup on Windows
@@ -349,11 +349,11 @@ With WSL, you can:
 - Switch seamlessly between PowerShell and bash
 - Get significantly better performance with tools like [Claude Code](https://claude.ai/code), which runs much faster and more reliably in a native Linux environment
 
-Think of it as the best of both worlds; Windows for your desktop apps and gaming, Linux for your development workflow. We'll walk through installation, configuration, and integrating WSL with VS Code, Windows Terminal, Claude Code, and your existing Windows tools.
+Think of it as the best of both worlds; Windows for your desktop apps and gaming, Linux for your development workflow. The [WSL 2 guide]({{ site.baseurl }}/howto/setup-wsl-2/) walks through installation, configuration, and integrating WSL with VS Code, Windows Terminal, Claude Code, and your existing Windows tools.
 
 If you've been frustrated with slow builds, flaky scripts, or tool compatibility issues on Windows, WSL solves most of those problems. AI coding assistants like Claude Code particularly benefit from the native Linux environment; faster file operations, better shell integration, and native Unix tooling make the experience dramatically smoother.
 
-Stay tuned for that deep dive. It's a game changer for developers who need both ecosystems.
+Check out the [full WSL 2 setup guide]({{ site.baseurl }}/howto/setup-wsl-2/) to see how to bring this exact development environment to Windows. It's a game changer for developers who need both ecosystems.
 
 ## Conclusion
 
