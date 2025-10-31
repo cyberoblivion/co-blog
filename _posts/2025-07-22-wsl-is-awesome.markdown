@@ -115,6 +115,14 @@ wsl --import al2023 C:\WSL\AL2023 C:\WSL\al2023-container-2023.6.20241212.0-x86_
 - `C:\WSL\AL2023` - Directory where the filesystem will be stored
 - `C:\WSL\al2023-container-...tar.xz` - Path to the downloaded tarball
 
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+    <div class="info-content">
+    <strong>Naming Convention Tip:</strong>
+    Notice how the instance name (<code>al2023</code>) and directory name (<code>AL2023</code>) match? This keeps things simple. When you run <code>wsl -d al2023</code>, you know exactly where its files live: <code>C:\WSL\AL2023</code>. No mental gymnastics trying to remember which directory holds which instance. This convention saves confusion when managing multiple WSL distributions.
+    </div>
+</div>
+
 ### Step 4: Start the Instance
 
 Launch your new Amazon Linux instance:
