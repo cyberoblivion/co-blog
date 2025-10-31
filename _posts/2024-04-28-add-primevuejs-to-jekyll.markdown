@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Add PrimeVue to Jekyll"
-date:   2024-04-28 15:34:44 -0400
+date:   2026-04-28 15:34:44 -0400
 categories: jekyll update vuejs
 permalink: /howto/add-primevue-vuejs-to-jekyll/
 author: "Ben Erridge"
