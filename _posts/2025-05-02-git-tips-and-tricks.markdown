@@ -347,8 +347,11 @@ With WSL, you can:
 - Run Linux command-line tools alongside Windows applications
 - Keep your `~/dev/` directory structure and workflow intact
 - Switch seamlessly between PowerShell and bash
+- Get significantly better performance with tools like [Claude Code](https://claude.ai/code), which runs much faster and more reliably in a native Linux environment
 
-Think of it as the best of both worlds; Windows for your desktop apps and gaming, Linux for your development workflow. We'll walk through installation, configuration, and integrating WSL with VS Code, Windows Terminal, and your existing Windows tools.
+Think of it as the best of both worlds; Windows for your desktop apps and gaming, Linux for your development workflow. We'll walk through installation, configuration, and integrating WSL with VS Code, Windows Terminal, Claude Code, and your existing Windows tools.
+
+If you've been frustrated with slow builds, flaky scripts, or tool compatibility issues on Windows, WSL solves most of those problems. AI coding assistants like Claude Code particularly benefit from the native Linux environment; faster file operations, better shell integration, and native Unix tooling make the experience dramatically smoother.
 
 Stay tuned for that deep dive. It's a game changer for developers who need both ecosystems.
 
