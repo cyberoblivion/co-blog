@@ -2,6 +2,7 @@
 layout: page
 title: "About"
 permalink: /about/
+description: "Learn about CyberOblivion, a technical blog covering software development, Linux system administration, cloud infrastructure, DevOps, containerization with Docker and Podman, AI tools, network security, and enterprise architecture. Practical tutorials, real-world solutions, and in-depth guides for developers, system architects, and IT professionals working with Git, AWS, GCP, OpenStack, Kubernetes, Graylog, Zabbix, pfSense, and modern development workflows."
 ---
 
 # Welcome to CyberOblivion
