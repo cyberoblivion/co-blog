@@ -6,7 +6,7 @@ categories: development howto
 bootstrap-enabled: false
 author: "Ben Erridge"
 permalink: /howto/development-env-setup/
-description: "A deep dive into my personal development environment setup, including bash aliases, git configuration, and directory structure. Learn how to optimize your workflow with powerful git aliases and smart organization patterns."
+description: "Complete guide to optimizing your Linux development environment with powerful bash aliases, advanced git configurations, and efficient directory structures. Learn professional dotfiles setup, git shortcuts (git in/out, branchup), bash-git-prompt integration, and portable ~/dev/ workspace organization for faster workflows and seamless OS migration."
 ---
 
 Every developer has their own way of organizing their workspace. Some like chaos, some crave order. Me? I'm somewhere in between; but I've landed on a setup that keeps me productive without getting in my way. Let's walk through how I configure my development environment, from directory structure to git aliases that save me countless keystrokes.
