@@ -28,7 +28,7 @@ This guide walks through setting up a production-ready Linux development environ
 WSL 2 isn't just "Linux on Windows." It's a full Linux kernel running in a lightweight virtual machine that integrates seamlessly with Windows. You get:
 
 - **Real Linux performance** - No more slow file operations or weird compatibility issues
-- **Native Unix tooling** - bash, ssh, git, docker, everything works as expected
+- **Native Unix tooling** - bash, ssh, git, podman, everything works as expected
 - **Seamless integration** - Access Windows files from Linux and vice versa
 - **Multiple distros** - Run Ubuntu, Debian, Amazon Linux, or any distribution simultaneously
 - **Development-ready** - Perfect for [Claude Code](https://claude.ai/code) and other tools that run better in Linux
@@ -160,7 +160,7 @@ wsl -d al2023
 
 ## Enabling systemd (For Testing Environments)
 
-Most of the time, you won't need systemd for development work. However, if you're setting up a testing or staging environment where you need to run services and daemons (like SSH servers, Docker containers as services, or databases managed by systemd), here's how to enable it:
+Most of the time, you won't need systemd for development work. However, if you're setting up a testing or staging environment where you need to run services and daemons (like SSH servers, Podman containers as services, or databases managed by systemd), here's how to enable it:
 
 ### Install systemd
 
@@ -566,10 +566,11 @@ sudo dnf install nodejs
 # Python
 sudo dnf install python3 python3-pip
 
-# Docker (if needed)
-sudo dnf install docker
-sudo systemctl enable --now docker
-sudo usermod -aG docker $USER
+# Podman (rootless container management)
+sudo dnf install podman
+
+# Optional: Set up Podman socket for Docker compatibility
+systemctl --user enable --now podman.socket
 ```
 
 ### 4. Clone Your Projects
