@@ -68,6 +68,9 @@ wsl --install -d Ubuntu
 # Debian
 wsl --install -d Debian
 
+# Fedora
+wsl --install -d Fedora
+
 # See all available distributions
 wsl --list --online
 ```
@@ -75,14 +78,15 @@ wsl --list --online
 **From Microsoft Store:**
 - [Ubuntu](https://apps.microsoft.com/detail/9pdxgncfsczv)
 - [Debian](https://apps.microsoft.com/detail/9msvkqc78pk6)
+- [Fedora](https://apps.microsoft.com/detail/9n6gdm4k2hnc) - **Now available as a standard install!** My personal favorite and beloved distro for its cutting-edge packages, excellent developer experience, and rock-solid stability.
 - [Kali Linux](https://apps.microsoft.com/detail/9pkr34tncv07)
 - [openSUSE](https://apps.microsoft.com/detail/9njvjts82tjx)
 
-These install with a single click and come pre-configured. However, for distributions not in the Store (like Amazon Linux, Fedora, or Rocky Linux), use the manual import process below.
+These install with a single click and come pre-configured. However, for distributions not in the Store (like Amazon Linux or Rocky Linux), use the manual import process below.
 
 ## Installing Amazon Linux 2023 on WSL 2
 
-While [Ubuntu](https://apps.microsoft.com/detail/9pdxgncfsczv) is the default WSL distribution, Amazon Linux 2023 is excellent for developers working with AWS or wanting an enterprise-focused distribution. You can also install [Fedora](https://github.com/fedora-cloud/docker-brew-fedora), [Rocky Linux](https://github.com/rocky-linux/sig-cloud-instance-images), and many other distributions using the same import process we'll cover below.
+While [Ubuntu](https://apps.microsoft.com/detail/9pdxgncfsczv) is the default WSL distribution, Amazon Linux 2023 is excellent for developers working with AWS or wanting an enterprise-focused distribution. For distributions not available in the Microsoft Store (like Amazon Linux or [Rocky Linux](https://github.com/rocky-linux/sig-cloud-instance-images)), you can use the manual import process we'll cover below.
 
 Here's how to install Amazon Linux 2023:
 
