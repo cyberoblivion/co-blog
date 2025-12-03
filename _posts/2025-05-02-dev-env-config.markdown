@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How I Configure My Development Environment"
+title:  "How I Configure My Linux Development Environment"
 date:   2025-05-02 20:34:44 -0400
 categories: development howto
 bootstrap-enabled: false
@@ -45,6 +45,21 @@ Here's what typically lives in each:
 - SDK installations ([Google Cloud SDK](https://cloud.google.com/sdk), [Eclipse](https://www.eclipse.org/), [IntelliJ](https://www.jetbrains.com/idea/), etc.)
 - Build tools and CLI utilities
 - Scripts that work across multiple projects
+
+### Why This Makes OS Migration Painless
+
+Having everything under `~/dev/` is a game changer when switching operating systems or setting up a new machine. Instead of hunting through scattered directories (`/opt/`, `~/Documents/`, `~/workspace/`, etc.), everything development-related lives in one place.
+
+Migrating to a new system? Simple:
+```bash
+# On old machine
+tar -czf dev-backup.tar.gz ~/dev/
+
+# On new machine
+tar -xzf dev-backup.tar.gz -C ~/
+```
+
+Copy your dotfiles (`.bashrc`, `.gitconfig`), run `bundle install` or `npm install` in your projects, and you're back up and running. No guessing where you put that utility script three months ago. No recreating directory structures from memory. Everything just works.
 
 ## Bash Configuration: Power User Settings
 
@@ -256,32 +271,7 @@ git ap patch-file.patch                 # Apply patch ignoring whitespace
 git s                                   # Verify changes
 ```
 
-### Why This Makes OS Migration Painless
 
-Having everything under `~/dev/` is a game changer when switching operating systems or setting up a new machine. Instead of hunting through scattered directories (`/opt/`, `~/Documents/`, `~/workspace/`, etc.), everything development-related lives in one place.
-
-Migrating to a new system? Simple:
-```bash
-# On old machine
-tar -czf dev-backup.tar.gz ~/dev/
-
-# On new machine
-tar -xzf dev-backup.tar.gz -C ~/
-```
-
-Copy your dotfiles (`.bashrc`, `.gitconfig`), run `bundle install` or `npm install` in your projects, and you're back up and running. No guessing where you put that utility script three months ago. No recreating directory structures from memory. Everything just works.
-
-## Why This Setup Works
-
-This configuration evolved over years of development work. The key principles:
-
-1. **Reduce Friction**: Every alias saves seconds, but those seconds add up. When you're running git commands hundreds of times a day, saving a few keystrokes matters.
-
-2. **Visual Feedback**: Git prompt integration and aliases like `git in`/`git out` give you situational awareness without running multiple commands.
-
-3. **Safety Rails**: Seeing what you're about to push (`git out`) or pull (`git in`) before doing it prevents mistakes.
-
-4. **Consistency**: Having a standard directory structure and predictable aliases means less cognitive load. You can focus on solving problems, not remembering where things are.
 
 ## Getting Started
 
@@ -354,6 +344,14 @@ Think of it as the best of both worlds; Windows for your desktop apps and gaming
 If you've been frustrated with slow builds, flaky scripts, or tool compatibility issues on Windows, WSL solves most of those problems. AI coding assistants like Claude Code particularly benefit from the native Linux environment; faster file operations, better shell integration, and native Unix tooling make the experience dramatically smoother.
 
 Check out the [full WSL 2 setup guide]({{ site.baseurl }}/howto/setup-wsl-2/) to see how to bring this exact development environment to Windows. It's a game changer for developers who need both ecosystems.
+
+<div class="info-panel">
+  <div class="info-icon">&#8505;</div>
+  <div class="info-content">
+    <strong>Coming Soon:</strong>
+    Manual configuration is great for learning, but what about automating all of this? In an upcoming post, we'll show you how to "Ansiblize" this entire development environment setup; from dotfiles to directory structures to tool installations. Imagine provisioning a new machine with a single command. Stay tuned!
+  </div>
+</div>
 
 ## Conclusion
 
