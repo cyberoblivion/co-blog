@@ -18,13 +18,31 @@
       </div>
     </main>
 
-    {%- include footer.html -%} 
+    {%- include footer.html -%}
     {%- include copywrite.html -%}
     {% if page.bootstrap-enabled == true %}
         <!-- Include Bootstrap 5 JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
          crossorigin="anonymous"></script>
-     {%- endif -%}    
+     {%- endif -%}
+
+    <!-- AnchorJS for deep linking to headings -->
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+    <script>
+      anchors.options = {
+        placement: 'right',
+        visible: 'hover',
+        icon: '#',
+        class: 'anchor-link'
+      };
+      anchors.add('h2, h3, h4, h5, h6');
+    </script>
+    <style>
+      .anchor-link {
+        font-size: 1.4em;
+        font-weight: bold;        
+      }      
+    </style>
 
   </body>
 
