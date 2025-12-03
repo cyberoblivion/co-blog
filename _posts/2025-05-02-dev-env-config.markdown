@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How I Configure My Linux Development Environment"
+title:  "How I Configure My Development Environment"
 date:   2025-05-02 20:34:44 -0400
 categories: development howto
 bootstrap-enabled: false
@@ -9,7 +9,9 @@ permalink: /howto/development-env-setup/
 description: "Complete guide to optimizing your Linux development environment with powerful bash aliases, advanced git configurations, and efficient directory structures. Learn professional dotfiles setup, git shortcuts (git in/out, branchup), bash-git-prompt integration, and portable ~/dev/ workspace organization for faster workflows and seamless OS migration."
 ---
 
-Every developer has their own way of organizing their workspace. Some like chaos, some crave order. Me? I'm somewhere in between; but I've landed on a setup that keeps me productive without getting in my way. Let's walk through how I configure my development environment, from directory structure to git aliases that save me countless keystrokes.
+Every developer has their own way of organizing their workspace. Some like chaos, some crave order. Me? I'm somewhere in between; but I've landed on a setup that keeps me productive without getting in my way.
+
+In this guide, I'll walk you through a few optimizations I make to my Linux development environments. A simple `~/dev/` directory structure that makes OS migrations effortless, powerful bash aliases for instant navigation, a massive command history setup, and advanced git aliases like `git in`/`git out` and `git branchup` that turn complex workflows into single commands. Whether you're setting up a fresh Linux install or optimizing your existing workflow, these configurations will save you time and reduce friction in your daily development work.
 
 ## Directory Structure: Keep It Simple
 
