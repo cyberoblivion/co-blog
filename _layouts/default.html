@@ -27,6 +27,7 @@
      {%- endif -%}
 
     <!-- AnchorJS for deep linking to headings -->
+    {% if page.layout != 'home' %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
     <script>
       anchors.options = {
@@ -40,9 +41,10 @@
     <style>
       .anchor-link {
         font-size: 1.4em;
-        font-weight: bold;        
-      }      
+        font-weight: bold;
+      }
     </style>
+    {% endif %}
 
   </body>
 
