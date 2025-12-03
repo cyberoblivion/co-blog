@@ -29,6 +29,7 @@ url: "https://blog.cyberoblivion.com" # the base hostname & protocol for your si
 #twitter_username: jekyllrb
 github_username:  cyberoblivion
 youtube_username: "@CyberOblivion2"
+rss: RSS
 author: "CyberOblivion"
 copywrite: "Ben Erridge"
 start_year: 2024
