@@ -11,9 +11,13 @@ description: "A look at two opposing views on AI-assisted software development: 
 
 Over the last few weeks I watched two talks on building software with AI, and I haven't been able to stop thinking about how closely they map to people I actually work with.
 
-**[Dexter Horthy](https://lnkd.in/gjdkWiRM)**, in short: don't let engineers ship slop, or it'll turn your codebase into ash.
+**Dexter Horthy**, in short: don't let engineers ship slop, or it'll turn your codebase into ash.
 
-**[DHH](https://lnkd.in/gc3TYe3W)** (creator of Ruby on Rails), in short: embrace the future, treat the code as a black box. English > Ruby.
+[![What Actually Gets You 2-3x With AI Coding (ft. Dex Horthy)](https://img.youtube.com/vi/5FcHP22u0zs/hqdefault.jpg)](https://youtu.be/5FcHP22u0zs)
+
+**DHH** (creator of Ruby on Rails), in short: embrace the future, treat the code as a black box. English > Ruby.
+
+[![Rails World 2026 Opening Keynote - DHH](https://img.youtube.com/vi/vDjW_dRyKXY/hqdefault.jpg)](https://www.youtube.com/watch?v=vDjW_dRyKXY)
 
 Two very smart people, two very different conclusions. Personally, I land closer to Dex. But when the guy who created Rails tells you English is the new Ruby, you don't just shrug that off.
 
