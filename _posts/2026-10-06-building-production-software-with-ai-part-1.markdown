@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building Production Software with AI, Part 1: The Plan Is Where the Real Work Happens"
+title:  "Building Production Software with AI, Part 1: The Plan"
 date:   2026-10-06 09:00:00 -0400
 categories: ai howto
 bootstrap-enabled: false
